@@ -1,285 +1,288 @@
 /* General Reset */
-/* Step 1: Reset default margins, padding, and box sizing for all elements */
 * {
-  /* margin: ; 
-    padding: ; 
-    box-sizing: ; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Step 2: Set global styles for the body */
+/* Global Styles */
 body {
-  /* font-family: ; 
-    line-height: ; 
-    color: ; 
-    background-color: ; 
-    scroll-behavior: ; */
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #1e1e1e;
+  scroll-behavior: smooth;
 }
 
-/* Navigation Bar Styling */
-/* Step 3: Navigation Bar Styles */
+/* Navigation Bar */
 .navbar {
-  /* background-color: ; 
-    color: ; 
-    padding: ; 
-    box-shadow: ; */
+  background-color: #252526;
+  color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Step 4: Navbar Container Styles */
 .navbar--container {
-  /* display: ; 
-    justify-content: ; 
-    align-items: ; 
-    max-width: ; 
-    margin: ; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
-/* Step 5: Logo Container Styles */
+.title {
+  color: #f4b400;
+}
+
 .logo-container {
-  /* display: ; 
-    align-items: ; 
-    gap: ; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Step 6: Logo Image Styles */
 .logo-img-container img {
-  /* width: ; 
-    height: ; 
-    border-radius: ; 
-    object-fit: ; */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-/* Step 7: Logo Text Styles */
 .logo-container p {
-  /* font-size: ; 
-    font-weight: ; 
-    color: ; */
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
-/* Step 8: Navigation Links Container Styles */
 .nav-links-container {
-  /* display: ; 
-    gap: ; 
-    list-style: ; */
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
-/* Step 9: Navigation Link Styles */
 .nav-links-container a {
-  /* color: ; 
-    text-decoration: ; 
-    font-weight: ; 
-    transition: ; */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-/* Step 10: Navigation Link Hover Styles */
 .nav-links-container a:hover {
-  /* color: ; */
+  color: #f4b400;
 }
 
-/* Header Banner Styling */
-/* Step 11: Header Banner Container Styles */
+/* Header Banner */
 .header-banner-container {
-  /* background: ; 
-    color: ; 
-    text-align: ; 
-    padding: ; 
-    border-radius: ; */
+  background: linear-gradient(to right, #ffcc00, #66bb6a);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 5px;
 }
 
-/* Step 12: Header Banner Heading Styles */
 .header-banner-container h1 {
-  /* font-size: ; 
-    font-weight: ; 
-    margin-bottom: ; */
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-/* Step 13: Header Banner Paragraph Styles */
 .header-banner-container p {
-  /* font-size: ; 
-    max-width: ; 
-    margin: ; 
-    line-height: ; */
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: auto;
 }
 
-/* Main Section */
-/* Step 14: Main Content Container Styles */
+/* Main Content */
 .main {
-  /* display: ; 
-    flex-wrap: ; 
-    gap: ; 
-    max-width: ; 
-    margin: ; 
-    padding: ; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
-/* Step 15: Blog Post Container Styles */
 .main-posts {
-  /* flex: ; 
-    display: ; 
-    flex-direction: ; 
-    gap: ; */
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-/* Step 16: Individual Blog Post Styles */
 .main-posts article {
-  /* display: ; 
-    background-color: ; 
-    border: ; 
-    border-radius: ; 
-    overflow: ; 
-    box-shadow: ; */
+  display: flex;
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Step 17: Blog Post Image Styles */
 .main-posts article img {
-  /* width: ; 
-    height: ; 
-    object-fit: ; */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
-/* Step 18: Blog Post Content Container Styles */
 .main-posts article div {
-  /* padding: ; */
+  padding: 15px;
 }
 
-/* Step 19: Blog Post Heading Styles */
 .main-posts h2 {
-  /* font-size: ; 
-    color: ; 
-    margin-bottom: ; */
+  font-size: 1.4em;
+  color: #4da8da;
+  margin-bottom: 10px;
 }
 
-/* Step 20: Blog Post Metadata Styles */
 .post-meta {
-  /* font-size: ; 
-    color: ; 
-    margin-bottom: ; */
+  font-size: 0.9em;
+  color: #bbbbbb;
+  margin-bottom: 10px;
 }
 
-/* Sidebar Styling */
-/* Step 21: Sidebar Container Styles */
+/* Sidebar */
 .sidebar {
-  /* flex: ; 
-    background-color: ; 
-    border: ; 
-    border-radius: ; 
-    padding: ; 
-    box-shadow: ; */
+  flex: 1;
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Step 22: Sidebar Heading Styles */
 .sidebar h3 {
-  /* color: ; 
-    margin-bottom: ; */
+  color: #f4b400;
+  margin-bottom: 10px;
 }
 
-/* Step 23: Popular Post Container Styles */
 .popular-post {
-  /* display: ; 
-    align-items: ; 
-    margin-bottom: ; */
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-/* Step 24: Popular Post Image Styles */
 .popular-post img {
-  /* width: ; 
-    height: ; 
-    border-radius: ; 
-    object-fit: ; 
-    margin-right: ; */
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-right: 10px;
 }
 
-/* Step 25: Popular Post Link Styles */
 .popular-post a {
-  /* text-decoration: ; 
-    color: ; 
-    font-size: ; 
-    transition: ; */
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
 }
 
-/* Step 26: Popular Post Link Hover Styles */
 .popular-post a:hover {
-  /* color: ; */
+  color: #f4b400;
 }
 
-/* Footer Styling */
-/* Step 27: Footer Container Styles */
+/*Social Side Styling*/
+.social-side {
+  margin-top: 1rem;
+}
+
+.social-side h3 {
+  margin-bottom: 1rem;
+}
+
+.social-side a img {
+  width: 60px;
+  height: 50px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.social-side a img:hover {
+  transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+/* Footer */
 .footer {
-  /* background-color: ; 
-    color: ; 
-    padding: ; 
-    margin-top: ; 
-    text-align: ; 
-    border-top: ; */
+  background-color: #252526;
+  color: #ffffff;
+  padding: 40px 20px;
+  margin-top: 20px;
+  text-align: center;
+  border-top: 2px solid #444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Step 28: Footer Content Styles */
 .footer-content {
-  /* display: ; 
-    flex-wrap: ; 
-    justify-content: ; 
-    gap: ; 
-    max-width: ; 
-    margin: ; */
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
-/* Step 29: Footer Heading Styles */
 .footer-content h4 {
-  /* margin-bottom: ; 
-    color: ; */
+  color: #f4b400;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-/* Step 30: Footer Paragraph Styles */
 .footer p {
-  /* font-size: ; */
+  font-size: 1em;
+  max-width: 300px;
+}
+
+.footer hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 1rem 0;
 }
 
 .footer p:last-child {
-  /* margin-top: ; 
-    color: ; */
+  margin-top: 1rem;
+  color: #aaa;
+  width: 100%;
+  text-align: center;
 }
 
 /* Responsive Design */
-/* Step 31: Responsive Navbar Styles */
 @media (max-width: 768px) {
   .navbar--container {
-    /* flex-direction: ; 
-      text-align: ; */
+    flex-direction: column;
+    text-align: center;
   }
 
   .nav-links-container {
-    /* flex-direction: ; 
-      gap: ; */
+    flex-direction: column;
+    gap: 10px;
   }
 
   .header-banner-container h1 {
-    /* font-size: ; */
+    font-size: 2em;
   }
 
   .header-banner-container p {
-    /* font-size: ; */
+    font-size: 1em;
   }
 
   .main {
-    /* flex-direction: ; */
+    flex-direction: column;
   }
 
   .main-posts article {
-    /* flex-direction: ; 
-      align-items: ; 
-      text-align: ; */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .main-posts article img {
-    /* width: ; 
-      height: ; */
+    width: 100%;
+    height: auto;
   }
 
   .main-posts p {
-    /* font-size: ; */
+    font-size: 1em;
   }
 
   .footer-content {
-    /* flex-direction: ; 
-      text-align: ; */
+    flex-direction: column;
+    text-align: center;
   }
 }
